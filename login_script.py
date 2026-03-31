@@ -27,7 +27,7 @@ def run_login():
         Stealth().apply_stealth_sync(page)
 
         # 1. 访问主页
-        page.goto("https://ap-northeast-1.run.claw.cloud/")
+        page.goto(" https://ap-southeast-1.run.claw.cloud/")
         page.wait_for_load_state("networkidle")
         page.wait_for_timeout(3000)
         page.screenshot(path="01_home_page.png")
